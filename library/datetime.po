@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-01 20:27+0000\n"
-"PO-Revision-Date: 2024-04-15 00:06-0400\n"
+"PO-Revision-Date: 2024-04-21 23:29-0400\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
 "Language: tr\n"
@@ -25,11 +25,10 @@ msgid "**Source code:** :source:`Lib/datetime.py`"
 msgstr "**Kaynak kod:** :source:`Lib/datetime.py`"
 
 #: library/datetime.rst:17
-#, fuzzy
 msgid ""
 "The :mod:`!datetime` module supplies classes for manipulating dates and "
 "times."
-msgstr ":mod:`datetime` modülü tarih ve zaman işlemleri için sınıflar sağlar."
+msgstr ":mod:`!datetime` modülü tarih ve zaman işlemleri için sınıflar sağlar."
 
 #: library/datetime.rst:19
 msgid ""
@@ -82,15 +81,14 @@ msgid "Package `DateType <https://pypi.org/project/datetype/>`_"
 msgstr "Paket `DateType <https://pypi.org/project/datetype/>`_"
 
 #: library/datetime.rst:41
-#, fuzzy
 msgid ""
 "Third-party library that introduces distinct static types to e.g. allow :"
 "term:`static type checkers <static type checker>` to differentiate between "
 "naive and aware datetimes."
 msgstr ""
-"Statik tür denetleyicilerinin bilinçli ve bilinçsiz tarih zamanları arasında "
-"ayrım yapmasına izin vermek için farklı statik türler sunan üçüncü taraf bir "
-"kütüphane."
+"Örneğin :term:`static type checkers <static type checker>`'ın naive ve aware "
+"datetimes arasında ayrım yapmasına izin vermek için farklı statik tipler "
+"sunan üçüncü parti kütüphane."
 
 #: library/datetime.rst:48
 msgid "Aware and Naive Objects"
@@ -152,7 +150,6 @@ msgstr ""
 "bilgileri yakalar."
 
 #: library/datetime.rst:72
-#, fuzzy
 msgid ""
 "Only one concrete :class:`tzinfo` class, the :class:`timezone` class, is "
 "supplied by the :mod:`!datetime` module. The :class:`timezone` class can "
@@ -162,8 +159,8 @@ msgid ""
 "across the world are more political than rational, change frequently, and "
 "there is no standard suitable for every application aside from UTC."
 msgstr ""
-"Sadece bir somut :class:`tzinfo` sınıfı, :class:`timezone` sınıfı, :mod:"
-"`datetime` modülü tarafından sağlanır. :class:`timezone` sınıfı, UTC'nin "
+"Sadece bir somut :class:`tzinfo` sınıfı, :class:`timezone` sınıfı, :mod:`!"
+"datetime` modülü tarafından sağlanır. class:`timezone` sınıfı, UTC'nin "
 "kendisi veya Kuzey Amerika EST ve EDT zaman dilimleri gibi UTC'den sabit "
 "uzaklıklara sahip basit zaman dilimlerini temsil edebilir. Daha derin "
 "ayrıntı seviyelerinde zaman dilimlerini desteklemek uygulamaya bağlıdır. "
@@ -176,9 +173,8 @@ msgid "Constants"
 msgstr "Sabitler"
 
 #: library/datetime.rst:83
-#, fuzzy
 msgid "The :mod:`!datetime` module exports the following constants:"
-msgstr ":mod:`datetime` modülü aşağıdaki sabitleri dışa aktarır:"
+msgstr ":mod:`!datetime` modülü aşağıdaki sabitleri dışa aktarır:"
 
 #: library/datetime.rst:87
 msgid ""
@@ -238,13 +234,12 @@ msgstr ""
 "`microsecond` ve :attr:`.tzinfo`."
 
 #: library/datetime.rst:133
-#, fuzzy
 msgid ""
 "A duration expressing the difference between two :class:`.datetime` or :"
 "class:`date` instances to microsecond resolution."
 msgstr ""
-"İki :class:`date`, :class:`.time` veya :class:`.datetime` örneği arasındaki "
-"farkı mikrosaniye çözünürlüğünde ifade eden bir süre."
+"İki :class:`date` veya :class:`.datetime` örneği arasındaki farkı "
+"mikrosaniye çözünürlüğünde ifade eden bir süre."
 
 #: library/datetime.rst:140
 msgid ""
@@ -574,143 +569,166 @@ msgstr ""
 
 #: library/datetime.rst:312
 msgid "``t1 = t2 * i or t1 = i * t2``"
-msgstr ""
+msgstr "``t1 = t2 * i veya t1 = i * t2``"
 
 #: library/datetime.rst:312
 msgid ""
 "Delta multiplied by an integer. Afterwards *t1* // i == *t2* is true, "
 "provided ``i != 0``."
 msgstr ""
+"Delta bir tamsayı ile çarpılır. Daha sonra *t1* // i == *t2*, ``i != 0`` "
+"olması koşuluyla doğrudur."
 
 #: library/datetime.rst:316
 msgid "In general, *t1* \\* i == *t1* \\* (i-1) + *t1* is true. (1)"
-msgstr ""
+msgstr "Genel olarak, *t1* \\* i == *t1* \\* (i-1) + *t1* doğrudur. (1)"
 
 #: library/datetime.rst:319
 msgid "``t1 = t2 * f or t1 = f * t2``"
-msgstr ""
+msgstr "``t1 = t2 * f veya t1 = f * t2``"
 
 #: library/datetime.rst:319
 msgid ""
 "Delta multiplied by a float. The result is rounded to the nearest multiple "
 "of timedelta.resolution using round-half-to-even."
 msgstr ""
+"Delta bir float ile çarpılır. Sonuç, timedelta.resolution değerinin en yakın "
+"katına yuvarlanır ve bu işlem round-half-to-even kullanılarak "
+"gerçekleştirilir."
 
 #: library/datetime.rst:323
 msgid "``f = t2 / t3``"
-msgstr ""
+msgstr "``f = t2 / t3``"
 
 #: library/datetime.rst:323
 msgid ""
 "Division (3) of overall duration *t2* by interval unit *t3*. Returns a :"
 "class:`float` object."
 msgstr ""
+"Toplam sürenin *t2* aralık birimi *t3* ile bölümü (3). Bir :class:`float` "
+"nesnesi döndürür."
 
 #: library/datetime.rst:327
 msgid "``t1 = t2 / f or t1 = t2 / i``"
-msgstr ""
+msgstr "``t1 = t2 / f veya t1 = t2 / i``"
 
 #: library/datetime.rst:327
 msgid ""
 "Delta divided by a float or an int. The result is rounded to the nearest "
 "multiple of timedelta.resolution using round-half-to-even."
 msgstr ""
+"Delta bir float veya int değerine bölünür. Sonuç, timedelta.resolution "
+"değerinin en yakın katına yuvarlanır ve bu işlem round-half-to-even "
+"kullanılarak gerçekleştirilir."
 
 #: library/datetime.rst:331
 msgid "``t1 = t2 // i`` or ``t1 = t2 // t3``"
-msgstr ""
+msgstr "``t1 = t2 // i`` veya ``t1 = t2 // t3``"
 
 #: library/datetime.rst:331
 msgid ""
 "The floor is computed and the remainder (if any) is thrown away. In the "
 "second case, an integer is returned. (3)"
 msgstr ""
+"Taban hesaplanır ve kalan (varsa) atılır. İkinci durumda, bir tamsayı "
+"döndürülür. (3)"
 
 #: library/datetime.rst:335
 msgid "``t1 = t2 % t3``"
-msgstr ""
+msgstr "``t1 = t2 % t3``"
 
 #: library/datetime.rst:335
 msgid "The remainder is computed as a :class:`timedelta` object. (3)"
-msgstr ""
+msgstr "Kalan, bir :class:`timedelta` nesnesi olarak hesaplanır. (3)"
 
 #: library/datetime.rst:338
 msgid "``q, r = divmod(t1, t2)``"
-msgstr ""
+msgstr "``q, r = divmod(t1, t2)``"
 
 #: library/datetime.rst:338
 msgid ""
 "Computes the quotient and the remainder: ``q = t1 // t2`` (3) and ``r = t1 % "
 "t2``. q is an integer and r is a :class:`timedelta` object."
 msgstr ""
+"Bölüm ve kalanı hesaplar: ``q = t1 // t2`` (3) ve ``r = t1 % t2``. q bir "
+"tamsayı ve r bir :class:`timedelta` nesnesidir."
 
 #: library/datetime.rst:343
 msgid "``+t1``"
-msgstr ""
+msgstr "``+t1``"
 
 #: library/datetime.rst:343
 msgid "Returns a :class:`timedelta` object with the same value. (2)"
-msgstr ""
+msgstr "Aynı değere sahip bir :class:`timedelta` nesnesi döndürür. (2)"
 
 #: library/datetime.rst:346
 msgid "``-t1``"
-msgstr ""
+msgstr "``-t1``"
 
 #: library/datetime.rst:346
 msgid ""
 "equivalent to :class:`timedelta`\\ (-*t1.days*, -*t1.seconds*, -*t1."
 "microseconds*), and to *t1*\\* -1. (1)(4)"
 msgstr ""
+"class:`timedelta`\\ (-*t1.days*, -*t1.seconds*, -*t1.microseconds*) ve "
+"*t1*\\* -1 ile eşdeğerdir. (1)(4)"
 
 #: library/datetime.rst:351
 msgid "``abs(t)``"
-msgstr ""
+msgstr "``abs(t)``"
 
 #: library/datetime.rst:351
 msgid ""
 "equivalent to +\\ *t* when ``t.days >= 0``, and to -*t* when ``t.days < 0``. "
 "(2)"
 msgstr ""
+"``t.days >= 0`` olduğunda +\\ *t* ve ``t.days < 0`` olduğunda -*t* ile "
+"eşdeğerdir. (2)"
 
 #: library/datetime.rst:354
 msgid "``str(t)``"
-msgstr ""
+msgstr "``str(t)``"
 
 #: library/datetime.rst:354
 msgid ""
 "Returns a string in the form ``[D day[s], ][H]H:MM:SS[.UUUUUU]``, where D is "
 "negative for negative ``t``. (5)"
 msgstr ""
+"D, negatif ``t`` için negatif olmak üzere ``[D day[s], ][H]H:MM:SS[.UUUU]`` "
+"biçiminde bir dize döndürür. (5)"
 
 #: library/datetime.rst:358
 msgid "``repr(t)``"
-msgstr ""
+msgstr "``repr(t)``"
 
 #: library/datetime.rst:358
 msgid ""
 "Returns a string representation of the :class:`timedelta` object as a "
 "constructor call with canonical attribute values."
 msgstr ""
+"class:`timedelta` nesnesinin bir dize gösterimini, kanonik öznitelik "
+"değerleriyle birlikte bir kurucu çağrısı olarak döndürür."
 
 #: library/datetime.rst:603 library/datetime.rst:2529
 msgid "Notes:"
-msgstr ""
+msgstr "Notlar:"
 
 #: library/datetime.rst:367
 msgid "This is exact but may overflow."
-msgstr ""
+msgstr "Bu tamdır ancak taşabilir."
 
 #: library/datetime.rst:370
 msgid "This is exact and cannot overflow."
-msgstr ""
+msgstr "Bu tamdır ve taşma yapamaz."
 
 #: library/datetime.rst:373
 msgid "Division by 0 raises :exc:`ZeroDivisionError`."
-msgstr ""
+msgstr "0 ile bölme :exc:`ZeroDivisionError` hatası verir."
 
 #: library/datetime.rst:376
 msgid "-*timedelta.max* is not representable as a :class:`timedelta` object."
 msgstr ""
+"-*timedelta.max* bir :class:`timedelta` nesnesi olarak temsil edilemez."
 
 #: library/datetime.rst:379
 msgid ""
@@ -718,6 +736,9 @@ msgid ""
 "similarly to their internal representation. This leads to somewhat unusual "
 "results for negative timedeltas. For example::"
 msgstr ""
+":class:`timedelta` nesnelerinin dize gösterimleri, iç gösterimlerine benzer "
+"şekilde normalleştirilir. Bu, negatif timedelta nesneleri için biraz "
+"alışılmadık sonuçlara yol açar. Örneğin::"
 
 #: library/datetime.rst:389
 msgid ""
@@ -725,6 +746,9 @@ msgid ""
 "t3)`` except when t3 is equal to ``timedelta.max``; in that case the former "
 "will produce a result while the latter will overflow."
 msgstr ""
+"``t2 - t3`` ifadesi her zaman ``t2 + (-t3)`` ifadesine eşit olacaktır, ancak "
+"t3`ün ``timedelta.max`` değerine eşit olduğu durumlar hariç; bu durumda "
+"birincisi bir sonuç üretirken ikincisi taşacaktır."
 
 #: library/datetime.rst:393
 msgid ""
@@ -732,14 +756,23 @@ msgid ""
 "support certain additions and subtractions with :class:`date` and :class:`."
 "datetime` objects (see below)."
 msgstr ""
+"Yukarıda listelenen işlemlere ek olarak, :class:`timedelta` nesneleri :class:"
+"`date` ve :class:`.datetime` nesneleriyle belirli toplama ve çıkarma "
+"işlemlerini destekler (aşağıya bakın)."
 
 #: library/datetime.rst:397
+#, fuzzy
 msgid ""
 "Floor division and true division of a :class:`timedelta` object by another :"
 "class:`timedelta` object are now supported, as are remainder operations and "
 "the :func:`divmod` function. True division and multiplication of a :class:"
 "`timedelta` object by a :class:`float` object are now supported."
 msgstr ""
+"Bir :class:`timedelta` nesnesinin başka bir :class:`timedelta` nesnesine kat "
+"bölme (bir aşağıya yuvarlanır) ve gerçek bölme (float ile sonuçlanabilir) "
+"işlemleri, kalan işlemleri ve :func:`divmod` fonksiyonu gibi artık "
+"desteklenmektedir. Bir :class:`timedelta` nesnesinin bir :class:`float` "
+"nesnesine gerçek bölünmesi ve çarpılması artık desteklenmektedir."
 
 #: library/datetime.rst:403
 msgid ":class:`timedelta` objects support equality and order comparisons."
